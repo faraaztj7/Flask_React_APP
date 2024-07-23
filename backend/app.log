@@ -1,0 +1,105 @@
+2024-07-03 02:10:23,264 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-03 02:10:23,264 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2024-07-03 02:10:23,264 - INFO - _internal.py:97 -  * Restarting with stat
+2024-07-03 02:10:23,678 - WARNING - _internal.py:97 -  * Debugger is active!
+2024-07-03 02:10:23,678 - INFO - _internal.py:97 -  * Debugger PIN: 520-458-294
+2024-07-03 02:11:05,567 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-03 02:11:05,567 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2024-07-03 02:11:05,578 - INFO - _internal.py:97 -  * Restarting with stat
+2024-07-03 02:11:05,931 - WARNING - _internal.py:97 -  * Debugger is active!
+2024-07-03 02:11:05,931 - INFO - _internal.py:97 -  * Debugger PIN: 520-458-294
+2024-07-03 02:11:10,159 - INFO - db.py:6 - Connecting to database...
+2024-07-03 02:11:10,192 - INFO - db.py:14 - Connected to database successfully.
+2024-07-03 02:11:10,192 - INFO - db.py:38 - Executing query: 
+    SELECT 
+        e.employeeNumber, e.lastName, e.firstName, e.extension, e.email, e.officeCode, 
+        e.jobTitle, o.city, o.phone, e.reportsTo, 
+        r.lastName AS reportToLastName, r.firstName AS reportToFirstName 
+    FROM 
+        employees e
+    LEFT JOIN 
+        offices o ON e.officeCode = o.officeCode
+    LEFT JOIN 
+        employees r ON e.reportsTo = r.employeeNumber
+    
+2024-07-03 02:11:10,192 - INFO - db.py:42 - Query executed successfully.
+2024-07-03 02:11:10,192 - INFO - db.py:50 - Database connection closed.
+2024-07-03 02:11:10,192 - INFO - app.py:15 - Retrieved employee data successfully.
+2024-07-03 02:11:10,192 - INFO - _internal.py:97 - 127.0.0.1 - - [03/Jul/2024 02:11:10] "GET /api/employees HTTP/1.1" 200 -
+2024-07-03 02:11:10,202 - INFO - db.py:6 - Connecting to database...
+2024-07-03 02:11:10,209 - INFO - db.py:14 - Connected to database successfully.
+2024-07-03 02:11:10,209 - INFO - db.py:38 - Executing query: 
+    SELECT 
+        e.employeeNumber, e.lastName, e.firstName, e.extension, e.email, e.officeCode, 
+        e.jobTitle, o.city, o.phone, e.reportsTo, 
+        r.lastName AS reportToLastName, r.firstName AS reportToFirstName 
+    FROM 
+        employees e
+    LEFT JOIN 
+        offices o ON e.officeCode = o.officeCode
+    LEFT JOIN 
+        employees r ON e.reportsTo = r.employeeNumber
+    
+2024-07-03 02:11:10,209 - INFO - db.py:42 - Query executed successfully.
+2024-07-03 02:11:10,209 - INFO - db.py:50 - Database connection closed.
+2024-07-03 02:11:10,209 - INFO - app.py:15 - Retrieved employee data successfully.
+2024-07-03 02:11:10,209 - INFO - _internal.py:97 - 127.0.0.1 - - [03/Jul/2024 02:11:10] "GET /api/employees HTTP/1.1" 200 -
+2024-07-03 02:11:10,472 - INFO - _internal.py:97 - 127.0.0.1 - - [03/Jul/2024 02:11:10] "[33mGET /manifest.json HTTP/1.1[0m" 404 -
+2024-07-03 16:51:39,712 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-03 16:51:39,724 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2024-07-03 16:51:39,727 - INFO - _internal.py:97 -  * Restarting with stat
+2024-07-03 16:51:40,085 - WARNING - _internal.py:97 -  * Debugger is active!
+2024-07-03 16:51:40,100 - INFO - _internal.py:97 -  * Debugger PIN: 520-458-294
+2024-07-03 16:51:45,328 - INFO - db.py:6 - Connecting to database...
+2024-07-03 16:51:45,331 - INFO - _internal.py:97 - 127.0.0.1 - - [03/Jul/2024 16:51:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-03 16:51:45,402 - INFO - db.py:14 - Connected to database successfully.
+2024-07-03 16:51:45,403 - INFO - db.py:38 - Executing query: 
+    SELECT 
+        e.employeeNumber, e.lastName, e.firstName, e.extension, e.email, e.officeCode, 
+        e.jobTitle, o.city, o.phone, e.reportsTo, 
+        r.lastName AS reportToLastName, r.firstName AS reportToFirstName 
+    FROM 
+        employees e
+    LEFT JOIN 
+        offices o ON e.officeCode = o.officeCode
+    LEFT JOIN 
+        employees r ON e.reportsTo = r.employeeNumber
+    
+2024-07-03 16:51:45,404 - INFO - db.py:42 - Query executed successfully.
+2024-07-03 16:51:45,405 - INFO - db.py:50 - Database connection closed.
+2024-07-03 16:51:45,405 - INFO - app.py:15 - Retrieved employee data successfully.
+2024-07-03 16:51:45,405 - INFO - _internal.py:97 - 127.0.0.1 - - [03/Jul/2024 16:51:45] "GET /api/employees HTTP/1.1" 200 -
+2024-07-03 16:51:45,407 - INFO - db.py:6 - Connecting to database...
+2024-07-03 16:51:45,407 - INFO - db.py:14 - Connected to database successfully.
+2024-07-03 16:51:45,407 - INFO - db.py:38 - Executing query: 
+    SELECT 
+        e.employeeNumber, e.lastName, e.firstName, e.extension, e.email, e.officeCode, 
+        e.jobTitle, o.city, o.phone, e.reportsTo, 
+        r.lastName AS reportToLastName, r.firstName AS reportToFirstName 
+    FROM 
+        employees e
+    LEFT JOIN 
+        offices o ON e.officeCode = o.officeCode
+    LEFT JOIN 
+        employees r ON e.reportsTo = r.employeeNumber
+    
+2024-07-03 16:51:45,407 - INFO - db.py:42 - Query executed successfully.
+2024-07-03 16:51:45,407 - INFO - db.py:50 - Database connection closed.
+2024-07-03 16:51:45,421 - INFO - app.py:15 - Retrieved employee data successfully.
+2024-07-03 16:51:45,421 - INFO - _internal.py:97 - 127.0.0.1 - - [03/Jul/2024 16:51:45] "GET /api/employees HTTP/1.1" 200 -
+2024-07-03 16:51:45,623 - INFO - _internal.py:97 - 127.0.0.1 - - [03/Jul/2024 16:51:45] "[33mGET /manifest.json HTTP/1.1[0m" 404 -
+2024-07-24 00:40:44,736 - INFO - _internal.py:97 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-07-24 00:40:44,736 - INFO - _internal.py:97 - [33mPress CTRL+C to quit[0m
+2024-07-24 00:40:44,736 - INFO - _internal.py:97 -  * Restarting with stat
+2024-07-24 00:40:45,119 - WARNING - _internal.py:97 -  * Debugger is active!
+2024-07-24 00:40:45,119 - INFO - _internal.py:97 -  * Debugger PIN: 520-458-294
+2024-07-24 00:40:50,299 - INFO - db.py:6 - Connecting to database...
+2024-07-24 00:40:50,299 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Jul/2024 00:40:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-07-24 00:40:50,601 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Jul/2024 00:40:50] "[33mGET /manifest.json HTTP/1.1[0m" 404 -
+2024-07-24 00:40:54,408 - ERROR - db.py:17 - Database connection error: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061) - C:\xampp\htdocs\employee_app\employee-app\backend\app\db.py
+2024-07-24 00:40:54,408 - ERROR - app.py:20 - Error retrieving employee data: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061) - C:\xampp\htdocs\employee_app\employee-app\backend\app\app.py
+2024-07-24 00:40:54,408 - INFO - _internal.py:97 - 127.0.0.1 - - [24/Jul/2024 00:40:54] "[35m[1mGET /api/employees HTTP/1.1[0m" 500 -
